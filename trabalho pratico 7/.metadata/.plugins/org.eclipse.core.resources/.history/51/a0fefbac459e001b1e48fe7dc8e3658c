@@ -1,0 +1,22 @@
+package minhasExcessoes;
+
+import principal.Conta;
+
+public class ContaException extends RuntimeException{
+	private String mensagem;
+    private Conta conta;
+    
+	public ContaException(String mensagem) {
+		this.mensagem=mensagem;
+		System.out.println("Seu saldo:" + this.conta.getSaldo());
+	}
+
+	public String getMensagem() {
+		return mensagem;
+	}
+
+	public void setMensagem(String mensagem) {
+		this.mensagem = mensagem;
+	}
+
+}

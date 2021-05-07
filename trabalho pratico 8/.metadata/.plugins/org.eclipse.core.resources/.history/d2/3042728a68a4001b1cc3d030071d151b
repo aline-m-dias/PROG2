@@ -1,0 +1,10 @@
+package componentes;
+
+public class SanduichesIngredientFactoryJP implements  iSanduichesIngredientFactory{
+
+	@Override
+	public void factoryMetodos() {
+		System.out.println("Sanduiche jp");
+	}
+
+}

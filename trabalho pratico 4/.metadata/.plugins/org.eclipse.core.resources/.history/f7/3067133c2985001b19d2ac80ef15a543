@@ -1,0 +1,54 @@
+package componentes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Pedido {
+
+	private float valorTotal=0;
+  
+	private List<ItemPedido> item = new ArrayList<>();
+	
+	public Pedido( int quantidade, Produto produto) {
+		this.item.add(new ItemPedido(quantidade, produto));
+	}
+	
+	
+	public float getValorTotal() {
+		return valorTotal;
+	}
+
+	public void setValorTotal(float valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+
+	public List<ItemPedido> getItem() {
+		return item;
+	}
+
+	public void setItem(List<ItemPedido> item) {
+		this.item = item;
+	}
+	
+	public void adicionaItem( int quantidade, Produto produto){
+		this.item.add(new ItemPedido(quantidade, produto));
+		System.out.println("Produto adicionado ao pedido");
+		 
+	}
+
+	public float obterTotal() {
+		
+		 for(int i=0; i<getItem().size(); i++) {
+		    	
+			 for(ItemPedido p: getItem()) {
+		   	     
+		    		float valor= p.getQuantidade() * p.getProduto().get(i).getValor();	
+		    		this.valorTotal +=valor;
+			    }
+		    }
+		  
+		
+		return this.valorTotal;
+	}
+	
+}

@@ -1,0 +1,26 @@
+package componentes;
+
+public class Animal implements iAnimal implements iFerramentas {
+
+	private String nomeEspecie;
+	private String nomeAnimal;
+	
+	@Override
+	public String getNomeEspecie() {
+		
+	}
+	@Override
+	public String getNomeAnimal() {
+		
+	}
+	
+	@Override
+	public Animal[] filtraESpecie (Animal[] completo, String especieFiltrar) {
+		
+	}
+
+	@Override
+	public String[] classificaEspecies (Animal[] completo ) {
+		
+	}
+}

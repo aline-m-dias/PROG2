@@ -1,0 +1,8 @@
+package componentes;
+
+public abstract class FormaGeometrica {
+
+	void exibir() {
+	}
+}
+

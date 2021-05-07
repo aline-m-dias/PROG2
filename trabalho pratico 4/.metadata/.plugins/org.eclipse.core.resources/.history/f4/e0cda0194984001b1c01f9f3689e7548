@@ -1,0 +1,16 @@
+package principal;
+
+import componentes.Pessoa;
+import componentes.Universidade;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Universidade Princeton = new  Universidade("Princeton ");
+		Universidade Cambridge= new Universidade("Cambridge");
+		Pessoa AlbertEinstein = new Pessoa (" Albert Einstein ", "14/3/1879",Princeton );
+		Pessoa IsaacNewton = new Pessoa ("Isaac Newton","4/1/1643",Cambridge  );
+		
+	}
+}

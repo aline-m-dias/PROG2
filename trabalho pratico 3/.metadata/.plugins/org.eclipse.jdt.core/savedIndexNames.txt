@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\aline\OneDrive\Documentos\PROG2\trabalho pratico 3\.metadata\.plugins\org.eclipse.jdt.core
+1238098318.index
+3502420020.index
+2814738594.index
+966857985.index
+1205222119.index

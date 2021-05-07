@@ -1,0 +1,11 @@
+package componentes;
+
+public class Circulo extends FormaGeometrica {
+
+	@Override
+	public void exibir() {
+		
+		System.out.println("Circulo");
+		
+	}
+}

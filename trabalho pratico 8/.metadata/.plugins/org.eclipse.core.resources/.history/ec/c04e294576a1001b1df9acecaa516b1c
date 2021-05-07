@@ -1,0 +1,25 @@
+package principal;
+
+public class Singeton {
+
+	private static Singeton instancia;
+	
+	private Singeton() {
+		
+	}
+	
+	public static Singeton getIntancia() {
+		if(instancia== null) {
+			instancia= new Singeton();
+		}
+		return instancia;
+	}
+
+	@Override
+	public String toString() {
+		return "Singeton [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
+	
+	
+}

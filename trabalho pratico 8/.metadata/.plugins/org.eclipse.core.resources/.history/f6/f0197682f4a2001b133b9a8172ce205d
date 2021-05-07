@@ -1,0 +1,21 @@
+package principal;
+
+import componentes.Cliente;
+import componentes.SomadorEsperado;
+import componentes.SomadorExistente;
+
+public class Main {
+
+
+	public static void main(String []args) {
+		
+		SomadorEsperado e= new SomadorExistente();
+
+		Cliente cliente = new Cliente(e);
+		cliente.executar();
+	}
+	
+
+	
+	
+}

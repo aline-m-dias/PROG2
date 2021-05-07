@@ -1,0 +1,13 @@
+package componentes;
+
+import principal.FactoryLanchonete;
+
+public class FactoryLanchoneteJP  extends FactoryLanchonete {
+
+	@Override
+	public void criarSanduiche(String tipo) {
+		System.out.println("Sanduiche com pão frances, queijo mussarela, presunto de frango,com verduras");	
+	
+	}
+
+}

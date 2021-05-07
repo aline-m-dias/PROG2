@@ -1,0 +1,51 @@
+package principal;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+import Componentes.Empregado;
+
+public class TestaEmpregado {
+	
+	
+
+	public static void main (String []args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		List <Empregado> listaEmpregados= new ArrayList<>();
+		
+		Empregado empregado= new Empregado();
+		
+	   
+		for(int i=0; i<3; i++) {
+			System.out.println("Digite o id do empregado:")	;
+			empregado.setID(sc.next());
+			System.out.println("Digite o nome do empregado:")	;
+			empregado.setNome(sc.next());
+			System.out.println("Digite o salario do empregado:")	;
+			empregado.setSalario(sc.nextDouble());
+			System.out.println("Digite a data que o empregado foi contratado:")	;
+			empregado.setDataContratado(sc.next());
+			listaEmpregados.add(empregado);
+		}
+		
+		System.out.println("Lista sem ordenar:");
+		
+		for(Empregado e: listaEmpregados) {
+			System.out.println(e.toString());
+		}
+		
+		Collections.sort(listaEmpregados);
+	
+		System.out.println("Lista  ordernada:");
+		
+		for(Empregado e: listaEmpregados) {
+			System.out.println(e.toString());
+		}
+		
+		sc.close();
+	}
+}

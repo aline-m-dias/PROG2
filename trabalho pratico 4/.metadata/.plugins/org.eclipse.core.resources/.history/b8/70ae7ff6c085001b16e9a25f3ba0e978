@@ -1,0 +1,49 @@
+package componetes;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Blog {
+
+	private List<Postagem> listaPostagem = new ArrayList<>();
+
+	
+	public void adicionarPostagem (Postagem postagem) {
+		listaPostagem.add(postagem);
+	}
+	
+	public void publicarPostagem(Postagem postagem) {
+		Date x = new Date();
+		postagem.setDataPublicacao(x);
+		
+		for(Postagem p: listaPostagem) {
+			if (p.getId() == postagem.getId()) {
+				listaPostagem.remove(p);
+			}
+			
+		}
+		listaPostagem.add(postagem);
+	}
+	
+	public void listarPostagemPublicadas() {
+		
+		
+		for(Postagem p: listaPostagem) {
+			Date data = new Date();
+			if (p.getDataPublicacao().before (data )) {
+				    p.imprime();
+			}
+			else {
+				listarTodasPostagem();
+			}
+			
+		}
+	}
+	
+	public void listarTodasPostagem() {
+		for(Postagem p: listaPostagem) {
+				p.imprime();
+		}
+	}
+}

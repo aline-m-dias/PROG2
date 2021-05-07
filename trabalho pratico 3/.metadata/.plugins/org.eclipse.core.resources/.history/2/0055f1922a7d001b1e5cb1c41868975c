@@ -1,0 +1,30 @@
+package componentes;
+
+import java.util.Scanner;
+
+public class Matriz {
+	
+	Scanner sc= new Scanner(System.in);
+
+	System.out.println("Digite quantas linhas terá a matriz");
+	
+	private int linha;
+	private int coluna;
+	private double  [][]  matrix;
+	
+	public Matriz(int linha, int coluna) {
+		this.linha=linha;
+		this.coluna=coluna ;
+		matrix = new double [this.linha][this.coluna];
+	}
+	
+	/*Método que informa o numero de linhas da matriz;*/
+	public int getLinha() {
+		return this.linha;
+	}
+	/*Método que informa o numero de colunas da matriz;*/
+	public int getColuna() {
+		return this.coluna;
+	}
+	/*M´etodo para preencher os dados da matriz, posi¸c˜ao por posi¸c˜ao;*/
+}

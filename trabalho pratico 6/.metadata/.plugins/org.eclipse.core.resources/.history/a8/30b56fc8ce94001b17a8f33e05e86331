@@ -1,0 +1,28 @@
+package componentes;
+
+public class Automovel  extends Veiculo{
+
+	
+	private float litros;
+	
+	public Automovel(float velocidade, int numPassageiros, int litros) {
+		super(velocidade, numPassageiros);
+		this.litros=litros;
+	}
+	
+	@Override
+	public float acelerar(float velocidade) {
+		super.setVelocidade(velocidade);
+		return super.getVelocidade();
+	}
+	
+	@Override
+	public  void parar() {
+		super.setVelocidade(0);
+		System.out.println("veiculo parado");
+	}
+	
+	public void trocarOleo(float litros) {
+		this.litros=litros;
+	}
+}

@@ -1,0 +1,11 @@
+package componentes;
+
+public class SanduichesIngredientFactoryCG  implements  iSanduichesIngredientFactory{
+
+	@Override
+	public void factoryMetodos() {
+		System.out.println("Sanduiche cg");
+		
+	}
+
+}

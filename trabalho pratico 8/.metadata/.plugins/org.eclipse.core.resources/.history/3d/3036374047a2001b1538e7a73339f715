@@ -1,0 +1,13 @@
+package principal;
+
+import componentes.Cliente;
+
+public class Main {
+
+/*
+	SomandorExistente soma =  new AdapterSomador();
+	Cliente cliente = new Cliente(soma);*/
+	Cliente cliente = new Cliente(new SomadorAdapter());
+	cliente.executar();
+	
+}

@@ -1,0 +1,16 @@
+package componentes;
+
+public class Bicicleta  extends Veiculo{
+
+	private float velocidade;
+	
+	@Override
+	public float acelerar(float velocidade) {
+		return this.velocidade=velocidade;
+	}
+	
+	@Override
+	public  void parar() {
+		this.velocidade=0;
+	}
+}

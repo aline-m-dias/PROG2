@@ -1,0 +1,7 @@
+package componentes;
+
+public interface iFerramentas {
+
+	public Animal[] filtraESpecie (Animal [] completo, String especieFiltrar);
+	public String [] classificaEspecies ( Animal [] completo );
+}

@@ -1,0 +1,17 @@
+package principal;
+
+import componentes.ItemPedido;
+import componentes.Pedido;
+import componentes.Produto;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto( 123, 20, "bola"); 
+		ItemPedido item1 = new  ItemPedido(2, p1);
+		Pedido pedido1 = new Pedido(item1.getQuantidade(), p1);
+		
+		System.out.println ("valor total:" + pedido1.getValorTotal());
+	}
+}

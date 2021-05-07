@@ -1,0 +1,12 @@
+package componentes;
+
+public class Departamento {
+	
+	private String nomeDepartamento ;
+	private Universidade universidade;
+	
+
+	public Departamento (String nomeDepartamento) {
+		this.nomeDepartamento=nomeDepartamento;
+	}
+}

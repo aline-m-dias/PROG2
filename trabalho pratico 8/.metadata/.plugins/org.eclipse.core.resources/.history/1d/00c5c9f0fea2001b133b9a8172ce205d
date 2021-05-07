@@ -1,0 +1,11 @@
+package principal;
+
+import componentes.FactoryLanchoneteCG;
+
+public class Main {
+
+	public static void main(String [] args) {
+		FactoryLanchonete l1 = new FactoryLanchoneteCG();
+		l1.criarSanduiche("Sanduiche com pão integral, queijo prato, presunto de frango,sem verduras");
+	}
+}

@@ -1,0 +1,8 @@
+package componentes;
+
+public class CarroSedan {
+
+	void exibirInfoSedan() {
+		
+	}
+}

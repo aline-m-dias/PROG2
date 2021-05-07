@@ -1,0 +1,6 @@
+package componentes;
+
+public class AbstractFatory {
+
+	public static PaoIF pao = new PaoIF();
+}

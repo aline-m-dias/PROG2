@@ -1,0 +1,5 @@
+package implementação;
+
+public interface Cor {
+
+}

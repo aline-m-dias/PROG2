@@ -1,0 +1,36 @@
+package principal;
+
+import componentes.Departamento;
+import componentes.Pessoa;
+import componentes.Universidade;
+
+public class Main {
+
+	public  static  void main(String [] args) {
+		
+		Departamento d1 = new Departamento("DEELT");
+		Departamento d2 = new Departamento("DECOM");
+		Departamento d3 = new Departamento("DECEA");
+		Departamento d4 = new Departamento("DECSI");
+		
+		Universidade ufop=  new Universidade ("Ufop", "João Monlevade");
+		
+		ufop.filiaDepartamento(d1);
+		ufop.filiaDepartamento(d2);
+		ufop.filiaDepartamento(d3);
+		ufop.filiaDepartamento(d4);
+		
+		Pessoa p1 = new Pessoa ("Joao", "20/01/1980", ufop, "professor de prog 2", d4);
+		
+		p1.imprime();
+		
+		System.out.println ("Departamentos da ufop:");
+		
+		for (Departamento d : ufop.getListaDepartamentos()) {
+			System.out.println(d.getNomeDepartamento());
+		}
+	}
+	
+}
+
+	

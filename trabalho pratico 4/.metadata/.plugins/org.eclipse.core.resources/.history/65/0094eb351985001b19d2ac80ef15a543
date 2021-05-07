@@ -1,0 +1,17 @@
+package componentes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Departamento {
+	
+	private String nomeDepartamento ;
+
+
+	public Departamento (String nomeDepartamento) {
+		this.nomeDepartamento=nomeDepartamento;
+		
+	}
+	
+	
+}

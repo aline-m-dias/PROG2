@@ -1,0 +1,30 @@
+package componetes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Blog {
+
+	private List<Postagem> listaPostagem = new ArrayList<>();
+	
+	public void adicionarPostagem (Postagem postagem) {
+		listaPostagem.add(postagem);
+	}
+	
+	public void publicarPostagem(Postagem postagem) {
+		//fazer alguma coisa com a data de publicação
+	}
+	
+	public void listarPostagemPublicadas() {
+		
+		for(Postagem p: listaPostagem) {
+			System.out.println(p);
+		}
+	}
+	
+	public void listarTodasPostagem() {
+		for(Postagem p: listaPostagem) {
+			System.out.println(p);
+		}
+	}
+}

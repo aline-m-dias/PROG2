@@ -1,0 +1,14 @@
+package componentes;
+
+public class Resultado {
+
+	private String nomeEspecie;
+	private int quantidade;
+	
+	public Resultado (String nomeEspecie, int quantidade) {
+		this.nomeEspecie=nomeEspecie;
+		this.quantidade=quantidade;
+	}
+	
+	
+}

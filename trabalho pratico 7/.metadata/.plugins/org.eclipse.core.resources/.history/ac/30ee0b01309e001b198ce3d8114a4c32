@@ -1,0 +1,40 @@
+package principal;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main (String []args) {
+		
+		Scanner sc = new Scanner (System.in);
+		int numero=1;
+		double r=0;
+		
+			try {
+				System.out.println ("Eu sei dividir.");
+				System.out.println("Informe o primeiro valor:");
+				int x= sc.nextInt();
+				System.out.println("Informe o segundo valor:");
+				int y= sc.nextInt();
+				try {
+				 r= x/y;
+				}catch(ArithmeticException e) {
+					System.out.println ("Você não pode dividir por zero");
+				}
+				
+			    
+				System.out.println ("O resultado da divisão e:" + r);
+			}catch(InputMismatchException e) {
+				System.out.println("Opção invalida");
+		
+			}
+			
+
+
+		
+		sc.close();
+		
+	}
+}
+

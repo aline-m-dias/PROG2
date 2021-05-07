@@ -1,0 +1,13 @@
+import componentes.Elevador;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Elevador e1 = new Elevador(10, 6);
+		
+		System.out.println ("Andar atual:" + e1.getAndarAtual() );
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package principal;
+
+import componentes.AdapterSomador;
+import componentes.Cliente;
+import componentes.SomadorEsperado;
+import componentes.SomadorExistente;
+
+public class Main {
+
+
+	SomadorExistente soma =  new SomadorExistente();
+	
+	SomadorEsperado e= new AdapterSomador();
+
+	Cliente cliente = new Cliente(e);
+	
+	cliente.executar();
+	
+	
+}

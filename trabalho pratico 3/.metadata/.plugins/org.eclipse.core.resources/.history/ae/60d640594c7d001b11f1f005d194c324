@@ -1,0 +1,105 @@
+package componentes;
+
+public class Elevador {
+
+	private int andarAtual;
+    private int totalDeAndares;
+    private int capacidadeElevador;
+    private int  quantasPessoas;
+    
+    /*Inicializa : parˆametros a capacidade do elevador e o total de
+    andares no pr´edio (os elevadores sempre come¸cam no t´erreo e vazio);*/
+    	
+    public Elevador(int totalDeAndares, int capacidadeElevador){
+       this.andarAtual=0;
+       this.totalDeAndares= totalDeAndares;
+       this.capacidadeElevador = capacidadeElevador;
+       this.quantasPessoas=0;
+    }
+    
+    
+    public int getAndarAtual() {
+		return andarAtual;
+	}
+
+	public void setAndarAtual(int andarAtual) {
+		this.andarAtual = andarAtual;
+	}
+
+
+	public int getTotalDeAndares() {
+		return totalDeAndares;
+	}
+
+	public void setTotalDeAndares(int totalDeAndares) {
+		this.totalDeAndares = totalDeAndares;
+	}
+
+	public int getCapacidadeElevador() {
+		return capacidadeElevador;
+	}
+
+	public void setCapacidadeElevador(int capacidadeElevador) {
+		this.capacidadeElevador = capacidadeElevador;
+	}
+
+	public int getQuantasPessoas() {
+		return quantasPessoas;
+	
+	}
+
+	public void setQuantasPessoas(int quantasPessoas) {
+		this.quantasPessoas = quantasPessoas;
+	}
+
+      
+	/*Entra : para acrescentar uma pessoa no elevador (s´o deve acrescentar se ainda houver
+			espa¸co);*/
+    
+    public void entra () {
+    	
+    	if (this.quantasPessoas < this.capacidadeElevador ) {
+    		this.quantasPessoas++;
+    		System.out.println("Entrou uma pessoa no elevador");
+    	}else {
+    		System.out.println("Elevador com capacidade ocupada, espere sair uma pessoa");
+    	}
+    }
+    
+   /* c) Sai : para remover uma pessoa do elevador (s´o deve remover se houver algu´em dentro
+    		dele)*/
+    
+    public void sai() {
+    	if (this.quantasPessoas>0) {
+    		this.quantasPessoas--;
+    		System.out.println("saiu uma pessoa do elevador");
+    	}
+    }
+    
+//Sobe : para subir um andar (n˜ao deve subir se j´a estiver no ´ultimo andar);
+   
+    public void subir(int andarDesejado) {
+    	if (andarDesejado< this.totalDeAndares) {
+    		
+    		while(this.andarAtual<andarDesejado) {
+    			this.andarAtual++;
+    		}
+    	}
+    }
+    
+   // Desce : para descer um andar (n˜ao deve descer se j´a estiver no t´erreo);
+    
+    public void desce(int andarDesejado) {
+    	
+    	if (this.andarAtual==0) {
+    		System.out.println("Voce estar no terreo, não pode descer!");
+    	}else {
+    		while(this.andarAtual > andarDesejado) {
+    			this.andarAtual--;
+    		}
+    	}
+    		
+    }
+
+
+}

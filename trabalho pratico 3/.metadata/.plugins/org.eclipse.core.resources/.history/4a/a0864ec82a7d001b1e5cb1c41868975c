@@ -1,0 +1,73 @@
+package componentes;
+
+import java.util.Scanner;
+
+public class Matriz {
+	
+	Scanner sc= new Scanner(System.in);
+	private int linha;
+	private int coluna;
+	private double  [][]  matrix;
+	
+	public Matriz(int linha, int coluna) {
+		this.linha=linha;
+		this.coluna=coluna ;
+		matrix = new double [this.linha][this.coluna];
+	}
+	
+	/*Método que informa o numero de linhas da matriz;*/
+	public int getLinha() {
+		return this.linha;
+	}
+	/*Método que informa o numero de colunas da matriz;*/
+	public int getColuna() {
+		return this.coluna;
+	}
+	
+	/*Método para preencher os dados da matriz, posição por posição;*/
+	public void preencheMatriz() {
+		
+		for(int i=0; i<linha; i++) {
+			for(int j=0; j<coluna; j++) {
+				matrix[i][j]=i+j;
+			}
+		}
+		
+	}
+	
+/* Método que permita editar o valor de uma determinada posição da matriz*/
+	
+	public void modificaPosicaoMatriz() {
+		System.out.println("Digite a posicao da matriz que deseja modificar:\n Linha:");
+		int l=sc.nextInt();
+		System.out.println("Coluna:");
+		int c=sc.nextInt();
+		System.out.println("Digite o valor para inserir na posicao da matriz");
+		double valor=sc.nextDouble();
+		this.matrix[l][c]=valor;
+	}
+	
+	//M´etodo para transpor a matriz (apenas se ela for uma matriz quadrada);
+
+	public void matrizTranposta() {
+		if (this.linha == this.coluna) {
+			
+			for(int i=0; i<this.linha; i++) {
+				for(int j=0; j<this.coluna; j++) {
+					
+					matrix[i][j]= matrix[j][i];
+				}
+			}
+		}
+	}
+	
+	public void imprimeMatriz() {
+		for(int i=0; i<this.linha; i++) {
+			for(int j=0; j<this.coluna; j++) {
+				
+				System.out.print(matrix[i][j]);
+			}
+			System.out.println();
+		}
+	}
+}

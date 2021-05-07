@@ -1,0 +1,11 @@
+package componentes;
+
+public class FormasGeometricasFactory {
+
+	public  FormaGeometrica getForma(String forma){
+		if(forma.equalsIgnoreCase("Circulo")) {
+			return new Circulo();
+		}
+		return null;
+	}
+}

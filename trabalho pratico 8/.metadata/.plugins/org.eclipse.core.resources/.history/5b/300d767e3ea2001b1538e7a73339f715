@@ -1,0 +1,17 @@
+package componentes;
+
+public class FabricaFiat implements FabricaDeCarro {
+
+	@Override
+	public CarroSedan criarCarroSedan() {
+		
+		return null;
+	}
+
+	@Override
+	public CarroPopular criarCarroPopular() {
+		
+		return null;
+	}
+
+}

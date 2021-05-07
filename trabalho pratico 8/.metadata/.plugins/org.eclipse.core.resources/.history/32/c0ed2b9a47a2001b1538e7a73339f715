@@ -1,0 +1,13 @@
+package principal;
+
+import componentes.SomadorExistente;
+
+public class Main {
+
+
+	SomadorExistente soma =  new SomadorExistente();
+	
+	SomadorEsperado= new AdapterSomador(soma);
+	
+	
+}

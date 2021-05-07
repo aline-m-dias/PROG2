@@ -1,0 +1,39 @@
+package principal;
+
+import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.Scanner;
+
+import componetes.Blog;
+import componetes.Postagem;
+import componetes.Usuario;
+
+public class Main {
+
+	public static void main (String [] args) {
+
+		Scanner sc= new Scanner (System.in);
+		Usuario user1 = new Usuario(1, "user", "user", "123");
+		String login, senha;
+
+		System.out.println("Digite o login do usuario: ");
+		login =sc.nextLine();
+		System.out.println("Digite a senha do usuario: ");
+		senha=sc.nextLine();
+
+		if (login != user1.getLogin() && senha != user1.getSenha()) {
+			System.out.println("Usuario ou senha invalidos!");
+		}
+		
+		Blog b1= new Blog();
+		//Integer id, String titulo, String texto, Date dataPublicacao
+		Date d1= new Date();
+		
+		Postagem p1 = new Postagem(1," primeiro post", "olá mundo!",d1);
+		Postagem p2 = new Postagem(2," segundo post", "Deus é fiel",d1);
+		b1.adicionarPostagem(p2);
+		b1.publicarPostagem(p1);
+		b1.publicarPostagem(p2);
+		b1.listarPostagemPublicadas();
+	}
+}

@@ -1,0 +1,18 @@
+package componentes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Departamento {
+	
+	private String nomeDepartamento ;
+	//private List<Universidade> universidades = new ArrayList<>();
+	
+
+	public Departamento (String nomeDepartamento) {
+		this.nomeDepartamento=nomeDepartamento;
+		
+	}
+	
+	
+}

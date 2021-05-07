@@ -1,0 +1,12 @@
+package principal;
+
+public class Main {
+
+	public static void main(String [] args) {
+		/*um vetor A de objetos que implementam a interface Animal representando diversos animais;*/
+		//List <Animal> listaAnimais = new ArrayList<>();
+		
+		
+		
+	}
+}

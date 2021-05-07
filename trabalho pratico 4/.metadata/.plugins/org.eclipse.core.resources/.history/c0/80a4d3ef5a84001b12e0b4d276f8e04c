@@ -1,0 +1,11 @@
+package principal;
+
+import componentes.Produto;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto("123", 20, "bola"); 
+	}
+}

@@ -1,0 +1,11 @@
+package componentes;
+
+public class Quadrado  extends FormaGeometrica{
+
+	@Override
+	public void exibir() {
+		
+		System.out.println("Quadrado");
+		
+	}
+}

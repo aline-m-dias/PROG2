@@ -1,0 +1,18 @@
+package componentes;
+
+public class SanduichesIngredientFactoryCG  implements  iSanduichesIngredientFactory, PaoIF{
+
+	@Override
+	public void factoryMetodos() {
+		System.out.println("Sanduiche cg");
+		
+		
+	}
+
+	@Override
+	public void criarPao(String nome) {
+		System.out.println(nome);
+		
+	}
+
+}

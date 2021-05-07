@@ -1,0 +1,39 @@
+package componentes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Animal implements iAnimal, implements iFerramentas  {
+
+	private String nomeEspecie;
+	private String nomeAnimal;
+	
+	@Override
+	public String getNomeEspecie() {
+		return this.nomeEspecie;
+	}
+	@Override
+	public String getNomeAnimal() {
+		return this.nomeAnimal;
+	}
+	@Override
+	public List<Animal> filtraESpecie (List <Animal> completo, String especieFiltrar) {
+		
+		List <Animal> Animal = new ArrayList<>();
+
+		for( int i = 0; i < Animal.size() ; i++){
+
+			if ( Animal.get(i).getNomeEspecie() == especieFiltrar){
+
+				Animal.add(Animal.get(i));  
+			}
+
+		}		
+
+		return Animal;
+	}
+	
+	@Override
+	public String [] classificaEspecies ( Animal [] completo );
+	
+}

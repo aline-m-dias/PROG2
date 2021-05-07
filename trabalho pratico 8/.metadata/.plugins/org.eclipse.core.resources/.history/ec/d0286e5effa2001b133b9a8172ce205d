@@ -1,0 +1,7 @@
+package principal;
+
+public abstract class FactoryLanchonete {
+
+	 public abstract void criarSanduiche( String tipo );
+
+}

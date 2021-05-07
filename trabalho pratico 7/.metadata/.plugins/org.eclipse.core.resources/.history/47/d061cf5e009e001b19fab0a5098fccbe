@@ -1,0 +1,29 @@
+package principal;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+
+public class Main {
+
+	public static void main (String [] args) {
+		
+		Random aleatorio = new Random();
+		
+		List <Integer> listaInteiros= new ArrayList<>();
+		
+		for (int i=0; i<50; i++) {
+			
+			listaInteiros.add(aleatorio.nextInt(99));
+		}
+		
+		for(int i=0; i<50; i++) {
+			System.out.println(listaInteiros.get(i));
+		}
+		
+		System.out.println("Menor elemento:" + Collections.min(listaInteiros) );
+		System.out.println("Menor elemento:" + Collections.max(listaInteiros) );
+	}
+}
+

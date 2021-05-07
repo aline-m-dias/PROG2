@@ -1,0 +1,16 @@
+package componentes;
+
+public class Produto {
+
+	private int codigo;
+	private float valor;
+	private String descricao;
+	private  ItemProduto item;
+	
+	public Produto(int codigo, float valor, String descricao, ItemProduto item) {
+		this.codigo=codigo;
+		this.valor=valor;
+		this.descricao=descricao;
+		this.item.item;
+	}
+}

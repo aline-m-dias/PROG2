@@ -1,0 +1,9 @@
+package componentes;
+
+import java.util.List;
+
+public interface iFerramentas {
+
+	public List<Animal> filtraESpecie (List<Animal> completo, String especieFiltrar);
+	public String [] classificaEspecies ( Animal [] completo );
+}

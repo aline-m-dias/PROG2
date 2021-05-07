@@ -1,0 +1,10 @@
+package componentes;
+
+public interface iAnimal {
+
+	public String getNomeEspecie();
+	public String getNomeAnimal();
+	String[] classificaEspecies(Animal[] completo);
+	Animal[] filtraESpecie(Animal[] completo, String especieFiltrar);
+}
+

@@ -1,0 +1,12 @@
+package componentes;
+
+public class Pessoa {
+
+	private String nome;
+	private Departamento  departamentoTrabalha;
+	
+	public Pessoa(String nome, Departamento departamentoTrabalha) {
+		this.nome=nome;
+		this.departamentoTrabalha=departamentoTrabalha;
+	}
+}

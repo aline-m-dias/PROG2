@@ -1,0 +1,17 @@
+package componentes;
+
+public class FormasGeometricasFactory  {
+
+	public static FormaGeometrica getForma(String forma){
+		if(forma.equalsIgnoreCase("Circulo")) {
+			return new Circulo();
+		} else if(forma.equalsIgnoreCase("Triangulo")) {
+			return new Triangulo();
+		} else 	if(forma.equalsIgnoreCase("Quadrado")) {
+			return new Quadrado();
+		}
+		return null;
+	}
+
+	
+}

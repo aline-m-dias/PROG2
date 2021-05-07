@@ -1,0 +1,33 @@
+package principal;
+
+import java.util.Scanner;
+
+import componentes.Normal;
+import componentes.Vip;
+
+public class Main {
+
+	public static void main() {
+
+		Scanner sc = new Scanner (System.in);	
+
+
+		System.out.println("Digite o tipo de ingresso: \n\n 1- para normal \n\n 2-para vip");
+
+		int tipo= sc.nextInt();
+		Normal i1= new Normal(50);	
+		//Vip i2 = new Vip(80, 30);
+		
+		switch (tipo){
+		case 1:
+			i1.TipoIngresso();
+			break;
+		case 2: 
+			System.out.println("Ingresso vip");
+			break;
+		default:
+			System.out.println ("Opção invalida");
+		}
+		sc.close();
+	}
+}

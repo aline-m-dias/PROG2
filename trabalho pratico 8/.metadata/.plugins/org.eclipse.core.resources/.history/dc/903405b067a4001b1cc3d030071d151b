@@ -1,0 +1,13 @@
+package principal;
+
+import componentes.SanduichesIngredientFactoryCG;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		SanduichesIngredientFactoryCG cg = new SanduichesIngredientFactoryCG();
+		cg.factoryMetodos();
+		cg.criarPao("pão integral");
+	}
+}

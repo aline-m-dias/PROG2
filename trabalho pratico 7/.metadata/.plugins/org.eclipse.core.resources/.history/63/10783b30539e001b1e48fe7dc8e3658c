@@ -1,0 +1,23 @@
+package principal;
+
+import java.util.Scanner;
+
+public class main {
+	 static Scanner  sc= new Scanner (System.in);
+	public static void main(String[] args) {
+		
+		try {
+			someMethod();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+	public static void someMethod() throws Exception{
+		System.out.println("Digite um valor:");
+		int a =sc.nextInt();
+	}
+	
+}

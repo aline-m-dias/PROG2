@@ -1,0 +1,15 @@
+package componentes;
+
+public class CamaroteSuperior  extends Vip{
+
+	private double valorAdicionalCamarote;
+	
+	public CamaroteSuperior(double valor, double valorAdicional, double valorAdicinalCamarote) {
+		super(valor, valorAdicional);
+		this.valorAdicionalCamarote=valorAdicionalCamarote;
+	}
+	
+	public double valorIngresso() {
+		return (super.valorVip()  + this.valorAdicionalCamarote);
+	}
+}

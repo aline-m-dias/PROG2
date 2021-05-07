@@ -1,0 +1,8 @@
+package componentes;
+
+public class FormasGeometricasFactory {
+
+	public static void  FormaGeometrica forma(String forma){
+		
+	}
+}

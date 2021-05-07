@@ -1,0 +1,20 @@
+package principal;
+
+import componentes.FormasGeometricasFactory;
+import componentes.iFormaGeometrica;
+
+public class Main {
+
+	public static void main(String[]args) {
+		
+		FormasGeometricasFactory forma = new FormasGeometricasFactory();
+		
+		iFormaGeometrica f= forma.getForma("Circulo");
+		
+		f.desenha();
+		
+		
+		
+		
+	}
+}

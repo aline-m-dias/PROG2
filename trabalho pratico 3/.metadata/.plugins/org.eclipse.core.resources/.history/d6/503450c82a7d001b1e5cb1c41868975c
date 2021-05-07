@@ -1,0 +1,24 @@
+package principal;
+
+import java.util.Scanner;
+
+import componentes.Matriz;
+
+public class Main {
+
+	public static void main (String [] args) {
+		
+		Scanner sc= new Scanner(System.in);
+
+		System.out.println("Digite quantas linhas terá a matriz");
+		int linha=sc.nextInt();
+		System.out.println("Digite quantas colunas terá a matriz");
+		int coluna=sc.nextInt();
+		Matriz mat= new Matriz(linha, coluna);
+		mat.preencheMatriz();
+		mat.imprimeMatriz();
+		mat.matrizTranposta();
+		mat.imprimeMatriz();
+		
+	}
+}

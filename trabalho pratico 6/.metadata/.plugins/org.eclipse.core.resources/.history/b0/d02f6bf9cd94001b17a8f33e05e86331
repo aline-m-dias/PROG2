@@ -1,0 +1,21 @@
+package componentes;
+
+public class Automovel  extends Veiculo{
+
+	private float velocidade;
+	private float litros;
+	
+	@Override
+	public float acelerar(float velocidade) {
+		return this.velocidade=velocidade;
+	}
+	
+	@Override
+	public  void parar() {
+		this.velocidade=0;
+	}
+	
+	public void trocarOleo(float litros) {
+		this.litros=litros;
+	}
+}

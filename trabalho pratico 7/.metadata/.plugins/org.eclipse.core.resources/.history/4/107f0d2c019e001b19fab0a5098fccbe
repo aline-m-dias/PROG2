@@ -1,0 +1,9 @@
+package Componentes;
+
+public class Empregado {
+
+	private String ID;
+	private String nome;
+	private Double salario;
+	private Date dataContratado;
+}

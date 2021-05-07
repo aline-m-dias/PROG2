@@ -1,0 +1,30 @@
+package principal;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import Componentes.Empregado;
+
+public class TestaEmpregado {
+	
+	
+
+	public static void main (String []args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		List <Empregado> listaEmpregados= new ArrayList<>();
+		
+		Empregado empregado= new Empregado();
+		
+	
+		
+		for(int i=0; i<3; i++) {
+					
+			empregado.setID(sc.next());
+		}
+		
+		sc.close();
+	}
+}

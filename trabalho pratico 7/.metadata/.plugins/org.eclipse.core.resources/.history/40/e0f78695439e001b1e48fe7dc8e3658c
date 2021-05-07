@@ -1,0 +1,5 @@
+package minhasExcessoes;
+
+public class ContaException {
+
+}

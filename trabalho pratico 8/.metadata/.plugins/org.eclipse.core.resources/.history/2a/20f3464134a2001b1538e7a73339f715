@@ -1,0 +1,13 @@
+package componentes;
+
+public class Triangulo extends FormaGeometrica {
+
+	@Override
+	public void exibir() {
+		
+		System.out.println("Triangulo");
+		
+	}
+
+	
+}
